@@ -1,0 +1,97 @@
+/* General Layout */
+.create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../asset/register.jpg') no-repeat center center/cover; /* Full-Page Background */
+  padding: 20px;
+}
+
+/* Image Section */
+.create-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#createimg {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Form Container */
+.create-form {
+  flex: 1;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Form Title */
+h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form Fields */
+#label {
+  font-weight: 600;
+  color: #555;
+}
+
+#input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* Buttons */
+
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 5px; /* Adds space between buttons */
+  margin-top: 15px; /* Adjust top margin if needed */
+ padding-right: 50%;
+}
+
+
+#submitbtn,
+#resetbtn {
+  width: auto; /* Adjust width */
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  display: block; /* Make buttons block-level */
+  margin-left: auto;
+  margin-right: auto; /* Center the buttons */
+}
+
+
+#submitbtn {
+  background: #dc3545;
+  color: white;
+}
+
+#submitbtn:hover {
+  background: #c82333;
+}
+
+

@@ -1,0 +1,109 @@
+/* Withdraw Page Layout */
+.withdraw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../asset/withdraw.jpg') no-repeat center center/cover; /* Full-Page Background */
+  padding: 20px;
+}
+
+/* Image Section */
+.withdraw-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#withdrawimg {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Form Container */
+.withdraw-form {
+  flex: 1;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form Fields */
+#label {
+  font-weight: 600;
+  color: #555;
+}
+
+#input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 5px; /* Adds space between buttons */
+  margin-top: 15px; /* Adjust top margin if needed */
+ padding-right: 50%;
+}
+
+
+#submitbtn,
+#resetbtn {
+  width: auto; /* Adjust width */
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  display: block; /* Make buttons block-level */
+  margin-left: auto;
+  margin-right: auto; /* Center the buttons */
+}
+/* Button Colors */
+#submitbtn {
+  background: #dc3545;
+  color: white;
+}
+
+#submitbtn:hover {
+  background: #c82333;
+}
+
+#resetbtn {
+  background: #007bff;
+  color: white;
+}
+
+#resetbtn:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .withdraw {
+    flex-direction: column;
+  }
+
+  .withdraw-img {
+    margin-bottom: 20px;
+  }
+}

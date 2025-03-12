@@ -1,0 +1,108 @@
+/* Deposit Page Layout */
+.deposit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../asset/deposit.jpg') no-repeat center center/cover; /* Full-Page Background */
+  padding: 20px;
+}
+
+/* Image Section */
+.deposit-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#depositimg {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Form Container */
+.deposit-form {
+  flex: 1;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form Fields */
+#label {
+  font-weight: 600;
+  color: #555;
+}
+
+#input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 5px; /* Adds space between buttons */
+  margin-top: 15px; /* Adjust top margin if needed */
+ padding-right: 50%;
+}
+
+
+#submitbtn,
+#resetbtn {
+  width: auto; /* Adjust width */
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  display: block; /* Make buttons block-level */
+  margin-left: auto;
+  margin-right: auto; /* Center the buttons */
+}
+#submitbtn {
+  background: #28a745;
+  color: white;
+}
+
+#submitbtn:hover {
+  background: #218838;
+}
+
+#resetbtn {
+  background: #007bff;
+  color: white;
+}
+
+#resetbtn:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .deposit {
+    flex-direction: column;
+  }
+
+  .deposit-img {
+    margin-bottom: 20px;
+  }
+}
